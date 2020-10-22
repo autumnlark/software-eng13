@@ -1,4 +1,4 @@
 # software-eng13
-Software engineering group 13's project
+Server Monk Software
 
-Photo-Based Social Media Platform
+Exposure: A Photo-Based Social Media Platform
