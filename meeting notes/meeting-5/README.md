@@ -52,7 +52,8 @@ Hannah:
    - My role in the group is the liason. I have been working at keeping in ouch and arranging potential meetings with our manager, also I have been working on our groups     "Risk Management Plan".
    - For the Risk Management Plan, I have it pretty much complete with tables that identify and rank potential risk
    - Need to add a reference and a few introduction lines for eacg table 
- -Meeting Minutes
+   
+ -Meeting Minutes:
   - Our manager went through each section of risks and made suggestions which can be easily added to make it a more appropriate for our stage 1 documents.
   
   
