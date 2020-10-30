@@ -45,8 +45,8 @@ Autumn:
     - We discussed whether using transcription software would make this easier and make the meeting notes better:
       - Current meeting notes do not include who contributes ideas, and are not very comprehensive as they just include main ideas. This means that good ideas are going 
         undocumented and perhaps unactioned.
-      - Yangyang is already using otter.ai, as we had discussed early on that this method could make our meetings more useful for him as he is not fluent in English. He said it
-        is not that easy to use, so I will compare with the other transcription softwares that are available
+      - For transcription software, Yangyang is already using otter.ai as we had discussed early on that this method could make our meetings more useful for him as he is not   
+        fluent in English. He says it works great, so we may try this software at the next meeting.
   
 Hannah:
   
