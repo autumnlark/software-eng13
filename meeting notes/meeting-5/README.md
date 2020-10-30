@@ -27,12 +27,12 @@ This meeting was structured as so:
 ---
   
 Individual's notes from their conversations with Lilia:
-
+-
 Aimee:
-  -
+  
   
 Andrew:
-  -
+  
   
 Autumn:
   - My role is leader/reporter, I am working on the planning and decisions section of the report and I also do the minutes for our meetings alongside James.
@@ -49,16 +49,16 @@ Autumn:
         is not that easy to use, so I will compare with the other transcription softwares that are available
   
 Hannah:
-  -
+  
   
 James:
-  -
+  
   
 Yangyang:
-  -
+  
   
 Blazej:
-  -
+  
  
  
  
