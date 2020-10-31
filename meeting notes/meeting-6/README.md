@@ -52,8 +52,8 @@ Our work so far:
         - James suggested:
           - We have to settle on a CSS style guide
           - Flex displays are vitally important as we need to make sure that this website will still be fully accessible for mobile, as the platform is very location-based
-            - Bootstrap? (suggested by Blazej, who has experience using it)
-          - Preprocessors  like sass or less, nodejs or ruby?
+          - Bootstrap? (suggested by Blazej, who has experience using it)
+          - Preprocessors  like sass or less, which are standalone packages in Ruby and NodeJS
           - Perhaps we should decide on a templating language
   - Risks
     - Is pretty much done, and just needs to be put into the report template

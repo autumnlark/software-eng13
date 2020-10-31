@@ -58,7 +58,8 @@ Hannah:
   
   
 James:
-  
+  - Requirements should be more specific, based on standards and fulfilment of requirements should be easily measurable.
+  - Diagrams should be enlarged/broken down to actually be visible in the final document
   
 Yangyang:
   
