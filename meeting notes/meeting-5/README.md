@@ -1,7 +1,7 @@
 Meeting 5 Minutes
 ===============
 
-#####26.10.2020
+##### 26.10.2020
 
 Agenda
 ------
@@ -49,7 +49,7 @@ Autumn:
         fluent in English. He says it works great, so we may try this software at the next meeting.
   
 Hannah:
-   - My role in the group is the liason. I have been working at keeping in ouch and arranging potential meetings with our manager, also I have been working on our groups     "Risk Management Plan".
+   - My role in the group is the liason. I have been working at keeping in touch and arranging potential meetings with our manager, also I have been working on our groups     "Risk Management Plan".
    - For the Risk Management Plan, I have it pretty much complete with tables that identify and rank potential risk
    - Need to add a reference and a few introduction lines for eacg table 
    
