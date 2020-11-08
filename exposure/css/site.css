@@ -1,0 +1,18 @@
+header {
+  background: #4d9c76;
+}
+header * {
+  color: white !important;
+  font-weight: 700;
+}
+header .navbar-brand {
+  margin-left: 0.5rem;
+  font-size: 2rem;
+  font-family: 'Comfortaa', sans-serif;
+}
+header .nav-item {
+  border-radius: 5px;
+}
+header .nav-item:hover {
+  background: #587d71;
+}
