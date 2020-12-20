@@ -1,5 +1,9 @@
 @import "variables.less";
+@import "mixins.less";
 
+body {
+  background: @color-bg;
+}
 
 header {
   //background-color: #a7e2e3 !important;
@@ -20,6 +24,59 @@ header {
     border-radius: 5px;
     &:hover {
       background: #587d71;
+    }
+  }
+}
+
+footer {
+  background: @color-white;
+}
+
+.bg-black {
+  background: @color-black;
+}
+
+.jumbotron {
+  background: @color-bg;
+  color: @color-white;
+
+  #exposure-title {
+    color: #333333;
+  }
+}
+
+#showcase .row > div {
+  background: @color-bg;
+  & > div {
+    background: @color-fg;
+    padding: 0.5rem;
+  }
+}
+
+@user-info-height: 50px;
+
+.showcase-item {
+  background: @color-black;
+  color: @color-white;
+  padding: 1rem 0.5rem;
+  margin: 0.5rem 0;
+  .user-info-div {
+    line-height: @user-info-height;
+    * {
+      display: inline-block;
+    }
+    .user-icon {
+      border-radius: 100%;
+      max-width: @user-info-height;
+      margin: 0 0.5rem 0 0;
+
+      /* Aligns image to the top of the div same way as text for centering. */
+      vertical-align: top;
+    }
+    .user-display {
+      line-height: @user-info-height;
+      font-size: 20px;
+      .no-spacing();
     }
   }
 }

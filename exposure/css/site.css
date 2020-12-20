@@ -1,3 +1,6 @@
+body {
+  background: #b7dccc;
+}
 header {
   background: #4d9c76;
 }
@@ -15,4 +18,49 @@ header .nav-item {
 }
 header .nav-item:hover {
   background: #587d71;
+}
+footer {
+  background: #ffffff;
+}
+.bg-black {
+  background: #000000;
+}
+.jumbotron {
+  background: #b7dccc;
+  color: #ffffff;
+}
+.jumbotron #exposure-title {
+  color: #333333;
+}
+#showcase .row > div {
+  background: #b7dccc;
+}
+#showcase .row > div > div {
+  background: #d6ede5;
+  padding: 0.5rem;
+}
+.showcase-item {
+  background: #000000;
+  color: #ffffff;
+  padding: 1rem 0.5rem;
+  margin: 0.5rem 0;
+}
+.showcase-item .user-info-div {
+  line-height: 50px;
+}
+.showcase-item .user-info-div * {
+  display: inline-block;
+}
+.showcase-item .user-info-div .user-icon {
+  border-radius: 100%;
+  max-width: 50px;
+  margin: 0 0.5rem 0 0;
+  /* Aligns image to the top of the div same way as text for centering. */
+  vertical-align: top;
+}
+.showcase-item .user-info-div .user-display {
+  line-height: 50px;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
 }

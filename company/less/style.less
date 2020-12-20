@@ -1,0 +1,126 @@
+@import "variables.less";
+@import "mixins.less";
+
+/* -- HTML Tags -- */
+
+body {
+  font-family: @font-sans;
+  .no-spacing();
+  .typography(@fs-body; @lh-body);
+  background: @colour-bg;
+  width: 100%;
+  z-index: 1;
+}
+
+p {
+  color: @colour-text;
+  .typography(@fs-body; @lh-body);
+}
+
+h1 {
+  color: @colour-white;
+  .header();
+  .typography(@fs-h1; @lh-h1);
+}
+
+h2 {
+  color: @colour-white;
+  .header();
+  .typography(@fs-h2; @lh-h2);
+}
+
+hr {
+  color: @colour-fg;
+  background: @colour-fg;
+  border-top: 5px solid @colour-fg;
+}
+
+/* -- Navigation -- */
+
+nav {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  transition: opacity 0.2s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: @colour-nav;
+
+  div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+
+    text-align: center;
+    width: max-content;
+    margin: 0 auto;
+  }
+  a {
+    text-decoration: none;
+
+    h1 {
+      margin: 0;
+      padding: 3rem 2rem;
+      transition: padding 0.2s, font-size 0.2s;
+    }
+
+    &:hover{
+      h1 {
+        padding: 3rem 1.25rem;
+        .typography(@fs-h1 + 0.2rem; @lh-h1);
+      }
+    }
+  }
+
+}
+#toggle-navigation {
+  position: fixed;
+  text-align: center;
+  width: 2rem;
+  height: 2rem;
+  background: @colour-bg;
+  border: none;
+  padding: 0;
+  margin: 0.25rem;
+  z-index: 3;
+}
+.fi {
+  color: @colour-white;
+  font-size: 2rem;
+}
+
+/* -- Header -- */
+
+header {
+  margin: 0;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+/* -- Utility -- */
+
+.hide {
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+}
+
+
+
+@import "media.less";
