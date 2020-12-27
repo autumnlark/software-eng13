@@ -77,7 +77,7 @@ nav a:hover h1 {
   line-height: 2.7rem;
 }
 #toggle-navigation {
-  position: fixed;
+  position: absolute;
   text-align: center;
   width: 2rem;
   height: 2rem;
@@ -113,3 +113,59 @@ header {
 /* md */
 /* lg */
 /* xl */
+
+.logoPic{
+  width:20%;
+  height: 30%;
+  position: absolute; 
+  
+  
+}
+
+.title-slidshow{
+  max-width: 100%;
+  position: absolute;
+  margin: auto;
+}
+
+.slide{
+  display: none;
+
+}
+
+.logo{
+  color: aqua;
+  font-size: larger;
+  text-shadow: aquamarine;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  top: 0;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 10s;
+  animation-name: fade;
+  animation-duration: 5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .50}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .20}
+  to {opacity: 1}
+}
+
+.About{
+  color: #ffffff;
+}
+
+.text{
+  color: azure;
+}
+
