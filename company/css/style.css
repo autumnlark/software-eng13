@@ -48,7 +48,7 @@ nav {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #100f0f;
+  background-image: linear-gradient(to bottom right,#4F2B3F,#8A23B4);
 }
 nav div {
   position: absolute;
