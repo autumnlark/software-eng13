@@ -195,6 +195,24 @@ header {
 .text {
   color: azure;
 }
+
+.Contact h3{
+  text-align: center;
+  font-family: 'Cantarell', Helvetica, Arial, sans-serif;
+  font-style: italic;
+   font-size: 100px;
+   color: #ffffff;
+}
+
+.Meet h4{
+  text-align: center;
+  font-family: 'Cantarell', Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 100px;
+  color: #ffffff;
+}
+
+
 /* xs */
 /* sm */
 /* md */
