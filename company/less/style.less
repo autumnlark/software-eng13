@@ -13,18 +13,18 @@ body {
 }
 
 p {
-  color: @colour-white;
+  color: @colour-text;
   .typography(@fs-body; @lh-body);
 }
 
 h1 {
-  color: @colour-white;
+  color: @colour-text;
   .header();
   .typography(@fs-h1; @lh-h1);
 }
 
 h2 {
-  color: @colour-white;
+  color: @colour-text;
   .header();
   .typography(@fs-h2; @lh-h2);
 }
@@ -36,29 +36,14 @@ hr {
 }
 
 @import "nav.less";
+@import "header.less";
+@import "footer.less";
 
-/* -- Header -- */
-
-header {
-  margin: 0;
-  padding:0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: center;
-
+.content {
+  margin-top: 3rem;
+  padding: 1rem 0 0;
+  border-top: 2px solid @colour-fg;
 }
-
-#logo {
-  max-height: 180px;
-}
-#company-name {
-  font-size: 5rem;
-  line-height: 100%;
-}
-
-
 
 /* -- Utility -- */
 
@@ -77,6 +62,9 @@ header {
 /*  max-width: 100%;
   position: absolute;
   margin: auto;*/
+  img {
+    width: 100%;
+  }
 }
 
 .slide{
@@ -113,7 +101,7 @@ header {
 }
 
 .about{
-  color: #ffffff;
+  color: @colour-text;
   background-color: #00ffff - #777777;
   margin: 2rem 0;
   padding: 1rem;
@@ -141,18 +129,15 @@ header {
   .bi {
     font-size: 5rem;
     margin: 2rem 0;
-    color: white;
+    color: @colour-text;
     display: block;
   }
 
   h2 {
     margin: 0 0 2rem;
+
   }
 
-}
-
-.text{
-  color: azure;
 }
 
 

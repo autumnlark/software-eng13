@@ -1,19 +1,20 @@
 
 document.getElementById('toggle-navigation').addEventListener(
     'click', toggleNav
-)
+);
+
 
 function toggleNav() {
     var nav = document.getElementById('navigation');
     var icon = document.getElementById('toggle-navigation-icon');
     if (nav.classList.contains('hide')) {
         show(nav);
-        icon.classList.remove('fi-more-v-a');
-        icon.classList.add('fi-close-a');
+        icon.classList.remove('bi-list');
+        icon.classList.add('bi-x');
     } else {
         hide(nav);
-        icon.classList.remove('fi-close-a');
-        icon.classList.add('fi-more-v-a');
+        icon.classList.remove('bi-x');
+        icon.classList.add('bi-list');
     }
 }
 
