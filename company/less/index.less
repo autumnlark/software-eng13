@@ -1,0 +1,113 @@
+@import "variables.less";
+@import "mixins.less";
+
+/* index.html styles */
+
+.about{
+  color: @colour-text;
+  background-color: @colour-cyan;
+  margin: 2rem 0;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.location {
+  color: @colour-text;
+  background: @colour-location;
+  margin: 2rem 0 0;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.map-container {
+  margin: 2rem 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 1rem;
+  background: @colour-location;
+}
+
+.process {
+  margin: 2rem 1rem;
+  padding: 1rem;
+
+  text-align: center;
+  background-color: @colour-cyan;
+  border-radius: 1rem;
+
+  transition: margin 0.2s;
+
+  .bi {
+    font-size: 5rem;
+    margin: 2rem 0;
+    color: @colour-text;
+    display: block;
+    transition: font-size 0.2s;
+  }
+
+  h2 {
+    margin: 0 0 2rem;
+    transition: font-size 0.2s;
+  }
+
+  &:hover {
+    margin: 2rem 0.5rem 1rem;
+    .bi {
+      font-size: 5.5rem;
+    }
+
+    h2 {
+      font-size: @fs-h2 + 0.5rem;
+    }
+  }
+}
+
+.section-header {
+  color: @colour-text;
+  margin: 1rem 1rem 0;
+}
+
+.process-container {
+  border: 2px solid @colour-cyan;
+  border-radius: 1rem;
+
+  .process-first {
+    background-color: @colour-cyan - #333333;
+  }
+  .process-last {
+    background-color: @colour-cyan + #333333;
+  }
+}
+
+.services-container {
+  border: 2px solid @colour-services;
+  border-radius: 1rem;
+}
+
+.services {
+  margin: 2rem 1rem;
+  padding: 1rem;
+
+  text-align: center;
+  background-color: @colour-services;
+  border-radius: 1rem;
+
+  transition: margin 0.2s;
+
+  h2 {
+    margin: 1rem;
+    transition: font-size 0.2s;
+    line-height: 1;
+  }
+
+  &:hover {
+    margin: 2rem 0.5rem 1.5rem;
+    h2 {
+      font-size: @fs-h2 + 0.5rem;
+    }
+  }
+
+}
+
+
+

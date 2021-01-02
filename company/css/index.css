@@ -1,0 +1,89 @@
+/* Default font-size */
+/* Default line-height */
+/* index.html styles */
+.about {
+  color: #f0ffff;
+  background-color: #008888;
+  margin: 2rem 0;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.location {
+  color: #f0ffff;
+  background: #cb7a00;
+  margin: 2rem 0 0;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.map-container {
+  margin: 2rem 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 1rem;
+  background: #cb7a00;
+}
+.process {
+  margin: 2rem 1rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: #008888;
+  border-radius: 1rem;
+  transition: margin 0.2s;
+}
+.process .bi {
+  font-size: 5rem;
+  margin: 2rem 0;
+  color: #f0ffff;
+  display: block;
+  transition: font-size 0.2s;
+}
+.process h2 {
+  margin: 0 0 2rem;
+  transition: font-size 0.2s;
+}
+.process:hover {
+  margin: 2rem 0.5rem 1rem;
+}
+.process:hover .bi {
+  font-size: 5.5rem;
+}
+.process:hover h2 {
+  font-size: 2.5rem;
+}
+.section-header {
+  color: #f0ffff;
+  margin: 1rem 1rem 0;
+}
+.process-container {
+  border: 2px solid #008888;
+  border-radius: 1rem;
+}
+.process-container .process-first {
+  background-color: #005555;
+}
+.process-container .process-last {
+  background-color: #00bbbb;
+}
+.services-container {
+  border: 2px solid #5700b8;
+  border-radius: 1rem;
+}
+.services {
+  margin: 2rem 1rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: #5700b8;
+  border-radius: 1rem;
+  transition: margin 0.2s;
+}
+.services h2 {
+  margin: 1rem;
+  transition: font-size 0.2s;
+  line-height: 1;
+}
+.services:hover {
+  margin: 2rem 0.5rem 1.5rem;
+}
+.services:hover h2 {
+  font-size: 2.5rem;
+}

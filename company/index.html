@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="assets/bootstrap-icons/font/bootstrap-icons.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/index.css">
     <!-- /CSS Imports -->
 
     <meta name="theme-color" content="#cc0000">
@@ -38,7 +38,7 @@
         <div class="logoPic">
             <img src="assets/img/logo.png" alt="Server Monk Software Logo" id="logo">
         </div>
-        <h1 id="company-name">Server Monks Software</h1>
+        <h1 id="company-name">Server Monk Software</h1>
         <button type="button" id="toggle-navigation">
             <i id="toggle-navigation-icon" class="bi bi-list"></i>
         </button>
@@ -58,37 +58,104 @@
     </div>
     <div class="container content">
         <div class="row">
-            <div class="about col-12">
-                <h1>About Us</h1>
-                <p>
-                    We are a team of 7 students from Heriot Watt University that aim to create creative and amazing software projects.
-                    In order to achieve this, we all draw from our past projects and skills we have learned throughtout our university careers.......
-                </p>
+            <div class="col-12">
+                <div class="about">
+                    <h1>About Us</h1>
+                    <p>
+                        We are a team of 7 students from Heriot-Watt University that aim to create creative and amazing software projects.
+                        In order to achieve this, we all draw from our past projects and skills we have learned throughtout our university careers.......
+                    </p>
+                </div>
+
             </div>
         </div>
+        <div class="row justify-content-between process-container">
+            <div class="col-12">
+                <h1 class="section-header">Our Process</h1>
+            </div>
+            <div class="col-12 col-sm-4">
+                <div class="process process-first">
+                    <i class="bi bi-lightning"></i>
+                    <h2>Discuss</h2>
+                </div>
+            </div>
+            <div class="col-12 col-sm-4">
+                <div class="process">
+                    <i class="bi bi-brush"></i>
+                    <h2>Design</h2>
+                </div>
+            </div>
+            <div class="col-12 col-sm-4">
+                <div class="process process-last">
+                    <i class="bi bi-file-code"></i>
+                    <h2>Develop</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="location">
+                    <h1>Our location</h1>
+                    <p>
+                        Situated in the uprising technology hub of Scotland, a city with over 50 years history in
+                        providing Computer Science research and teaching. As such, we are able to integrate the freshest talent
+                        and expert knowledge into your existing solutions, or create brand new, all in one applications.
+                    </p>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="map-container">
+                    <div id="map">
 
-        <div class="process row justify-content-between">
-            <div class="col-12 col-sm-4">
-                <i class="bi bi-lightning"></i>
-                <h2>Discuss</h2>
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-sm-4">
-                <i class="bi bi-brush"></i>
-                <h2>Design</h2>
+        </div>
+        <div class="row justify-content-between services-container">
+            <div class="col-12">
+                    <h1 class="section-header">Our Services</h1>
             </div>
-            <div class="col-12 col-sm-4">
-                <i class="bi bi-file-code"></i>
-                <h2>Develop</h2>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="services">
+                    <h2>Web Design</h2>
+                </div>
             </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="services">
+                    <h2>CMS</h2>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="services">
+                    <h2>E-Commerce</h2>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="services">
+                    <h2>DevOps</h2>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="services">
+                    <h2>Hosting</h2>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="services">
+                    <h2>Analytics</h2>
+                </div>
+            </div>
+
         </div>
     </div>
+
+
     <footer class="container">
         <div class="row">
             <div class="col-12 col-sm-4" id="footer-site">
                 <h4>Using Our Site</h4>
                 <p><a href="sitemap.xml">Sitemap</a></p>
                 <p><a href="#">Privacy and Cookie Policy</a></p>
-
             </div>
             <div class="col-12 col-sm-4" id="footer-contact">
                 <h4>Contact</h4>
@@ -124,12 +191,11 @@
         </div>
     </footer>
 
+    <!--<script defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsSFGDF9I8ccXM0XAHWQXLpjLwH-B5sGw&callback=initMap">
+    </script>
 
-
-
-
-
-
+    <script src="js/maps.js"></script>-->
     <script src="js/nav.js"></script>
 </body>
 </html>

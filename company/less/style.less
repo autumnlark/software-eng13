@@ -35,6 +35,10 @@ hr {
   border-top: 5px solid @colour-fg;
 }
 
+a {
+  color: @colour-text;
+}
+
 @import "nav.less";
 @import "header.less";
 @import "footer.less";
@@ -82,6 +86,10 @@ hr {
   top: 0;
 }
 
+#map {
+  height: 400px;
+}
+
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
@@ -100,45 +108,7 @@ hr {
   to {opacity: 1}
 }
 
-.about{
-  color: @colour-text;
-  background-color: #00ffff - #777777;
-  margin: 2rem 0;
-  padding: 1rem;
-  border-radius: 1rem;
-}
 
-.process {
-  margin: 2rem 0;
-  padding: 1rem;
-  border-radius: 1rem;
-
-  div {
-    text-align: center;
-    background-color: #00ffff - #777777;
-    border-radius: 1rem;
-    width: 30%;
-  }
-  div:first-child {
-    background-color: #00ffff - #777777 - #333333;
-  }
-  div:last-child {
-    background-color: #00ffff - #777777 + #333333;
-  }
-
-  .bi {
-    font-size: 5rem;
-    margin: 2rem 0;
-    color: @colour-text;
-    display: block;
-  }
-
-  h2 {
-    margin: 0 0 2rem;
-
-  }
-
-}
 
 
 @import "media.less";

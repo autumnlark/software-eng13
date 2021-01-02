@@ -37,6 +37,9 @@ hr {
   background: #ff0000;
   border-top: 5px solid #ff0000;
 }
+a {
+  color: #f0ffff;
+}
 /* -- Navigation -- */
 nav {
   width: 100%;
@@ -115,6 +118,7 @@ footer {
   color: #f0ffff;
   padding: 1rem 0 2rem;
   font-size: 0.9rem;
+  margin: 1rem 0 0;
   line-height: 1.2;
 }
 footer .row div {
@@ -168,6 +172,9 @@ footer .row div {
   text-align: center;
   top: 0;
 }
+#map {
+  height: 400px;
+}
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
@@ -190,39 +197,6 @@ footer .row div {
   to {
     opacity: 1;
   }
-}
-.about {
-  color: #f0ffff;
-  background-color: #008888;
-  margin: 2rem 0;
-  padding: 1rem;
-  border-radius: 1rem;
-}
-.process {
-  margin: 2rem 0;
-  padding: 1rem;
-  border-radius: 1rem;
-}
-.process div {
-  text-align: center;
-  background-color: #008888;
-  border-radius: 1rem;
-  width: 30%;
-}
-.process div:first-child {
-  background-color: #005555;
-}
-.process div:last-child {
-  background-color: #00bbbb;
-}
-.process .bi {
-  font-size: 5rem;
-  margin: 2rem 0;
-  color: #f0ffff;
-  display: block;
-}
-.process h2 {
-  margin: 0 0 2rem;
 }
 /* xs */
 /* sm */
