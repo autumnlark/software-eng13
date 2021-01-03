@@ -143,6 +143,7 @@ footer .row div {
 #footer-social .bi {
   font-size: 1.5rem;
   padding: 0;
+  color: #000000;
 }
 #footer-social .row {
   padding: 0;
@@ -168,6 +169,13 @@ footer .row div {
   background-color: #4161ff;
   color: #ffffff;
 }
+#map {
+  height: 400px;
+}
+.bi {
+  color: #ffffff;
+  font-size: 5rem;
+}
 /* -- Utility -- */
 .hide {
   opacity: 0;
@@ -187,22 +195,6 @@ footer .row div {
 }
 .slide {
   display: none;
-}
-.logo {
-  color: aqua;
-  font-size: larger;
-  text-shadow: aquamarine;
-  width: 100%;
-  position: absolute;
-  text-align: center;
-  top: 0;
-}
-#map {
-  height: 400px;
-}
-.bi {
-  color: #ffffff;
-  font-size: 5rem;
 }
 /* Fading animation */
 .fade {
