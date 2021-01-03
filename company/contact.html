@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="assets/bootstrap-icons/font/bootstrap-icons.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/contact.css">
 
     <!-- /CSS Imports -->
 
@@ -56,11 +56,34 @@
         </div>
     </div>
 
-
-            <div class="Contact">
-                <h3>Contact Us</h3>
-              
+    <div class="container content">
+        <div class="row">
+            <div class="col-12">
+                <div class="contact">
+                    <h3>Contact Us</h3>
+                    <div class="col-12 col-sm-10">
+                        <form id="contactForm" action=" https://servermonk.jamesl.dev/formtest.php" method="POST">
+                        <div class="input-fields">
+                            <input name="fname" type="text" class="input" placeholder="First Name" pattern="[a-zA-Z]" required>
+                            <br>
+                            <input name="lname" type="text" class="input" placeholder="Last Name" pattern="[a-zA-Z]" required>
+                            <br>
+                            <input name="email" type="text" class="input" placeholder="Email" required>
+                            <br>
+                       
+                        </div>
+                        <div class="queries">
+                            <textarea id="maxChar" name="qry" placeholder="Query Max 2000 characters" maxlength="200" required></textarea>
+                                <div id="submit" class="btn">Send</div>
+                         
+                        </div>
+                        </form>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+                
 
     <footer class="container">
         <div class="row">
@@ -105,4 +128,5 @@
     </body>
 
     <script src="js/nav.js"></script>
+    <script src="js/errorCheck.js"></script>
 </html>
