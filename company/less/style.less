@@ -7,36 +7,42 @@ body {
   font-family: @font-sans;
   .no-spacing();
   .typography(@fs-body; @lh-body);
-  background: @colour-bg;
+  background: @colour-white;
   width: 100%;
   z-index: 1;
 }
 
 p {
-  color: @colour-text;
+  color: @colour-black;
   .typography(@fs-body; @lh-body);
 }
 
 h1 {
-  color: @colour-text;
+  color: @colour-h1;
   .header();
   .typography(@fs-h1; @lh-h1);
 }
 
 h2 {
-  color: @colour-text;
+  color: @colour-h1;
   .header();
   .typography(@fs-h2; @lh-h2);
 }
 
-hr {
-  color: @colour-fg;
-  background: @colour-fg;
-  border-top: 5px solid @colour-fg;
+h3 {
+  color: @colour-h1;
+  .header();
+  .typography(@fs-h3; @lh-h3);
 }
 
+
+
 a {
-  color: @colour-text;
+  color: @colour-black;
+
+  &:hover {
+    color: @colour-black + #555555;
+  }
 }
 
 @import "nav.less";
@@ -46,7 +52,20 @@ a {
 .content {
   margin-top: 3rem;
   padding: 1rem 0 0;
-  border-top: 2px solid @colour-fg;
+  border-top: 2px solid @colour-divider;
+}
+
+.btn {
+  border: 1px solid @colour-h1;
+  background-color: @colour-white;
+
+  transition: color 200ms, background-color 200ms;
+
+  &:hover {
+    background-color: @colour-h1;
+    color: @colour-white;
+
+  }
 }
 
 /* -- Utility -- */
@@ -88,6 +107,10 @@ a {
 
 #map {
   height: 400px;
+}
+.bi {
+  color: @colour-white;
+  font-size: 5rem;
 }
 
 /* Fading animation */

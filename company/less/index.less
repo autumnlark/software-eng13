@@ -3,9 +3,9 @@
 
 /* index.html styles */
 
-.about{
+.about {
   color: @colour-text;
-  background-color: @colour-cyan;
+  background-color: @colour-index-background;
   margin: 2rem 0;
   padding: 1rem;
   border-radius: 1rem;
@@ -13,7 +13,7 @@
 
 .location {
   color: @colour-text;
-  background: @colour-location;
+  background: @colour-index-background;
   margin: 2rem 0 0;
   padding: 1rem;
   border-radius: 1rem;
@@ -24,7 +24,7 @@
   padding: 1.5rem;
   text-align: center;
   border-radius: 1rem;
-  background: @colour-location;
+  background: @colour-index-background;
 }
 
 .process {
@@ -48,6 +48,7 @@
   h2 {
     margin: 0 0 2rem;
     transition: font-size 0.2s;
+    color: @colour-white;
   }
 
   &:hover {
@@ -63,8 +64,12 @@
 }
 
 .section-header {
-  color: @colour-text;
-  margin: 1rem 1rem 0;
+  h1 {
+    color: @colour-h1;
+  }
+  * {
+    margin: 1rem 1rem 0;
+  }
 }
 
 .process-container {
@@ -80,8 +85,9 @@
 }
 
 .services-container {
-  border: 2px solid @colour-services;
+  border: 2px solid @colour-product-border;
   border-radius: 1rem;
+  margin-bottom: 2rem;
 }
 
 .services {
@@ -89,7 +95,7 @@
   padding: 1rem;
 
   text-align: center;
-  background-color: @colour-services;
+  background-color: @colour-product-background;
   border-radius: 1rem;
 
   transition: margin 0.2s;
@@ -98,6 +104,7 @@
     margin: 1rem;
     transition: font-size 0.2s;
     line-height: 1;
+    color: white;
   }
 
   &:hover {

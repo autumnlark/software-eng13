@@ -13,8 +13,12 @@ nav {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: linear-gradient(to bottom right,#4F2B3F,#8A23B4);
-
+  background-image: linear-gradient(to bottom right,@colour-gradient-start,@colour-gradient-end);
+  hr {
+    color: @colour-divider;
+    background: @colour-divider;
+    border-top: 5px solid @colour-divider;
+  }
 
   div {
     position: absolute;
@@ -37,6 +41,7 @@ nav {
       margin: 0;
       padding: 3rem 2rem;
       transition: padding 0.2s, font-size 0.2s;
+      color: @colour-black;
     }
 
     &:hover{

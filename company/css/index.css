@@ -3,14 +3,14 @@
 /* index.html styles */
 .about {
   color: #f0ffff;
-  background-color: #008888;
+  background-color: #c9ffff;
   margin: 2rem 0;
   padding: 1rem;
   border-radius: 1rem;
 }
 .location {
   color: #f0ffff;
-  background: #cb7a00;
+  background: #c9ffff;
   margin: 2rem 0 0;
   padding: 1rem;
   border-radius: 1rem;
@@ -20,7 +20,7 @@
   padding: 1.5rem;
   text-align: center;
   border-radius: 1rem;
-  background: #cb7a00;
+  background: #c9ffff;
 }
 .process {
   margin: 2rem 1rem;
@@ -40,6 +40,7 @@
 .process h2 {
   margin: 0 0 2rem;
   transition: font-size 0.2s;
+  color: #ffffff;
 }
 .process:hover {
   margin: 2rem 0.5rem 1rem;
@@ -50,8 +51,10 @@
 .process:hover h2 {
   font-size: 2.5rem;
 }
-.section-header {
-  color: #f0ffff;
+.section-header h1 {
+  color: #4161ff;
+}
+.section-header * {
   margin: 1rem 1rem 0;
 }
 .process-container {
@@ -65,14 +68,15 @@
   background-color: #00bbbb;
 }
 .services-container {
-  border: 2px solid #5700b8;
+  border: 2px solid #75cdde;
   border-radius: 1rem;
+  margin-bottom: 2rem;
 }
 .services {
   margin: 2rem 1rem;
   padding: 1rem;
   text-align: center;
-  background-color: #5700b8;
+  background-color: #549ead;
   border-radius: 1rem;
   transition: margin 0.2s;
 }
@@ -80,6 +84,7 @@
   margin: 1rem;
   transition: font-size 0.2s;
   line-height: 1;
+  color: white;
 }
 .services:hover {
   margin: 2rem 0.5rem 1.5rem;
