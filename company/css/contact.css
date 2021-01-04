@@ -3,26 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     outline: none;
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  body{
- 
-    background-size: cover;
-    height: 100vh;
-  }
-  
-  .container .content{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    
-    background: rgba(0,0,0,0.8);
-    padding: 30px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+
   }
   
   .content .title h1{
@@ -88,11 +69,17 @@
     .contact-form{
       flex-direction: column;
     }
-    .msg textarea{
+    .queries textarea{
       height: 80px;
     }
     .input-fields,
-    .msg{
-      width: 200%;
+    .queries{
+      width: 100%;
     }
   }
+
+  .warning
+{
+  font-size:0.8em;
+  color:#800;
+}
