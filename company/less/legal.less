@@ -1,0 +1,32 @@
+@import "variables.less";
+@import "mixins.less";
+
+p {
+  color: @colour-black;
+  .typography(@fs-body; @lh-body);
+}
+
+h1 {
+  color: @colour-black;
+  .header();
+  font-style: normal;
+  text-align: center;
+  .typography(@fs-h1; @lh-h1);
+  margin-bottom: 2rem;
+}
+
+h2 {
+  color: @colour-black;
+  .header();
+  font-style: normal;
+  .typography(@fs-h2; @lh-h2);
+}
+
+h3 {
+  color: @colour-black;
+  .header();
+  font-style: normal;
+  .typography(@fs-h3; @lh-h3);
+}
+
+
