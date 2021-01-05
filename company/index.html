@@ -33,7 +33,6 @@
             <a href="contact.html"><h1>Contact Us</h1></a>
         </div>
     </nav>
-
     <header>
         <div class="logoPic">
             <img src="assets/img/logo.png" alt="Server Monk Software Logo" id="logo">
@@ -57,9 +56,9 @@
         </div>
     </div>
     <div class="container content">
-        <div class="row">
+        <section class="row" id="about">
             <div class="col-12">
-                <div class="about">
+                <div class="about-us">
                     <h1>About Us</h1>
                     <p>
                         Server Monk Software is a company started by a group of seven 3<sup>rd</sup> year Heriott Watt students based in Edinburgh. As a company we aim to create high quality and fantastic looking software products for any client and their business.
@@ -77,8 +76,8 @@
                 </div>
 
             </div>
-        </div>
-        <div class="row justify-content-between process-container">
+        </section>
+        <section class="row justify-content-between" id="process">
             <div class="col-12">
                 <div class="section-header">
                     <h1>Our Process</h1>
@@ -103,10 +102,32 @@
                     <h2>Develop</h2>
                 </div>
             </div>
-        </div>
-        <div class="row">
+        </section>
+        <section class="row justify-content-center" id="projects">
             <div class="col-12">
-                <div class="location">
+                <h1>Our Projects</h1>
+            </div>
+            <div class="col-4">
+                <div class="project">
+                    <div class="project-logo" id="exposure-logo">
+                        <p class="project-name">Exposure</p>
+                    </div>
+                    <div class="project-desc" id="exposure-text" style="display: none; opacity: 0;">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed dui eget dolor venenatis
+                            tincidunt ut at tortor. Phasellus id sodales massa. Mauris molestie efficitur dui vel hendrerit.
+                            Morbi porta nisi eu lorem efficitur varius. In vel nisi non lacus egestas efficitur ac at ligula.
+                            Nulla vel varius massa, nec porta leo. Duis nec euismod est, in tempor erat. In tortor lectus,
+                            interdum fermentum mauris ac, ultricies pharetra tellus.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="row" id="location">
+            <div class="col-12">
+                <div class="location-header">
                     <h1>Our location</h1>
                     <p>
                         Situated in the uprising technology hub of Scotland, a city with over 50 years history in
@@ -118,49 +139,46 @@
             <div class="col-12">
                 <div class="map-container">
                     <div id="map">
-
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row justify-content-between services-container">
+        </section>
+        <section class="row justify-content-between" id="services">
             <div class="col-12">
                     <h1 class="section-header">Our Services</h1>
             </div>
             <div class="col-12 col-sm-6 col-md-4">
-                <div class="services">
+                <div class="service">
                     <h2>Web Design</h2>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4">
-                <div class="services">
+                <div class="service">
                     <h2>CMS</h2>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4">
-                <div class="services">
+                <div class="service">
                     <h2>E-Commerce</h2>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4">
-                <div class="services">
+                <div class="service">
                     <h2>DevOps</h2>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4">
-                <div class="services">
+                <div class="service">
                     <h2>Hosting</h2>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4">
-                <div class="services">
+                <div class="service">
                     <h2>Analytics</h2>
                 </div>
             </div>
-
-        </div>
+        </section>
     </div>
-
 
     <footer class="container">
         <div class="row">
@@ -224,5 +242,6 @@
 
     <script src="js/maps.js"></script>
     <script src="js/nav.js"></script>
+    <script src="js/projects.js"></script>
 </body>
 </html>

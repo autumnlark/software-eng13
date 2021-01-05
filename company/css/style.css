@@ -178,11 +178,11 @@ footer .row div {
 }
 /* -- Utility -- */
 .hide {
-  opacity: 0;
+  opacity: 0 ;
   display: none;
 }
 .show {
-  opacity: 1;
+  opacity: 1 ;
   display: block;
 }
 .title-slideshow {
