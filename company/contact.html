@@ -65,20 +65,23 @@
                         <form id="contactForm" action=" https://servermonk.jamesl.dev/formtest.php" method="POST">
                         <div class="input-fields">
                             <input name="fname" type="text" class="input" placeholder="First Name" pattern="[a-zA-Z]" required>
-                            <p style="display: none; color: red;" id="fname-message">Name can only contain characters.</p>
+                            <p style="display: none; color: red;" id="fname-message">First name must not be left empty and consist of characters only.</p>
                             <br>
                             <input name="lname" type="text" class="input" placeholder="Last Name" pattern="[a-zA-Z]" required>
+                            <p style="display: none; color: red;" id="lname-message">Last name must not be left empty and consist of characters only.</p>
                             <br>
-                            <input name="email" type="text" class="input" placeholder="Email" required>
+                            <input name="email" type="text" class="input" placeholder="Email" id="validationCustom03" required>
+                            <p style="display: none; color: red;" id="email-message">Email cannot be left blank</p>
                             <br>
                        
                         </div>
                         <div class="queries">
                             
-                            <textarea id="maxChar" name="qry" placeholder="Query Max 2000 characters" maxlength="20" required></textarea>
-                            <div id="submit" class="btn">Send</div>
-                        </div>
+                            <textarea id="maxChar" name="qry" placeholder="Query Max 2000 characters" maxlength="2000" required></textarea>
+                           <p><span id="count"></span>/2000 characters<p style="display: none; color: red;" id="query-message"> Query cannot be left blank</p></p>
                             
+                        </div>
+                        <div id="submit" class="btn">Send</div>
                       
                         </form>
                         </div>
