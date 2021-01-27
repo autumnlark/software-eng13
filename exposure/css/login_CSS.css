@@ -1,0 +1,94 @@
+body {
+    height: 100%;
+    width: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    background: url(beaut1.jpg) no-repeat center center fixed;
+    background-position: centre;
+    background-size: cover;
+    position: absolute;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 75%;
+    width: 60%;
+    min-height: 500px;
+    min-width: 300px;
+    background: rgb(135,217,188);
+    background: linear-gradient(180deg, rgba(135,217,188,1) 20%, rgba(250,250,250,1) 32%);
+    margin: auto;
+    border-radius: 45px;
+    overflow: auto;
+    padding: 5px;
+}
+
+.flex-item {
+    flex: 0 0 auto;
+    margin: 10px;
+    align-content: center;
+}
+
+#site-logo {
+    width: 100px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+#header {
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 40px;
+    color:#4e4e4e;
+    margin-top: 0px;
+}
+
+.textbox {
+    width: 90%;
+    padding: 10px;
+    margin: 5px;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+}
+
+.submit-btn {
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: #6dbda1;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    font-family: 'ariel', sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+.message {
+    color: #4e4e4e;
+    font-family: 'ariel', sans-serif;
+    font-size: 14px;
+    position: absolute;
+    width: 50%;
+}
+
+.socials{
+	margin: 30px;
+    position: relative;
+    height: 40px;
+    width: 40px;
+}
