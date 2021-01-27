@@ -1,113 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Log In</title>
+    
+    <title>Log In | Exposure</title>
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico"/>
+
+    <link rel="stylesheet" href="login_CSS.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Sansita+Swashed:wght@700&display=swap" rel="stylesheet">
 
-    <style>
-        body {
-	        height: 100%;
-            width: 100%;
-            min-height: 100%;
-            min-width: 100%;
-	        background: url(beaut1.jpg) no-repeat center center fixed;
-	        background-position: centre;
-	        background-size: cover;
-            position: absolute;
-        }
-
-        .flex-container {
-            display: flex;
-            flex-wrap: nowrap;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            align-content: center;
-            height: 85%;
-	        width: 60%;
-	        min-height: 500px;
-            min-width: 300px;
-            background: rgb(135,217,188);
-            background: linear-gradient(180deg, rgba(135,217,188,1) 20%, rgba(250,250,250,1) 32%);
-            margin: auto;
-	        border-radius: 45px;
-        }
-
-        .flex-item {
-            flex: 0 0 auto;
-            margin: 10px;
-        }
-
-        #site-logo {
-	    width: 100px;
-	    height: 80px;
-        }
-
-        #header {
-            font-family: 'Sansita Swashed', cursive;
-            color:#4e4e4e ;
-        }
-
-        .textbox {
-	        width: 50%;
-	        padding: 10px;
-	        margin: 5px;
-	        border-left: 0;
-	        border-top: 0;
-	        border-right: 0;
-	        border-bottom: 1px solid #999;
-	        outline: none;
-	        background: transparent;
-        }
-
-        .submit-btn{
-	        width: 85%;
-	        padding: 10px 30px;
-	        cursor: pointer;
-	        display: block;
-	        margin: auto;
-	        background: #6dbda1;
-	        border: 0;
-	        outline: none;
-	        border-radius: 30px;
-        }
-
-        .message{
-            color: #777;
-	        font-size: 14px;
-	        position: absolute;
-        }
-
-        
-
-    </style>
 </head>
 <body> 
     
     <input id="back-btn" type="image" src="back.png" name="backBtn" alt="Back" width="50" height="50">
 
     <div class="flex-container">
-        <span><img id="site-logo" src="Exposure-logo.png" alt="Exposure logo"></span>
-        <span><h1 class="flex-item" id="header">Exposure</h1></span>
+        <div class="flex-item">
+            <img id="site-logo" src="Exposure-logo.png" alt="Exposure logo">
+        </div>
+        <div>
+            <h1 class="flex-item" id="header">Exposure</h1>
+        </div>
 
         <form id="login">
             
-            <label for="textbox-user">Email/Username:</label>
-            <input type="text" class="textbox" placeholder="Enter Username" required>
-            <label for="textbox-pass">Password:</label>
-            <input type="password" class="textbox" placeholder="Enter Password" required>
-            <br>
-            <input type="checkbox" class="check-box" checked="checked"><span class="message">Remember Me?</span>
-        
-            <button type="submit" id="login-btn" class="submit-btn">Log in</button>
-            <a href="https://www.youtube.com/watch?v=CQeezCdF4mk" class="message" target="_blank">Forgot Password?</a>
-        
+            <div class="flex-item">
+                <input type="text" class="textbox" placeholder="Enter Username" required>
+                <input type="password" class="textbox" placeholder="Enter Password" required>
+            </div>
+
+            <div class="flex-item">
+                <input type="checkbox" class="check-box" checked="checked">
+                <span class="message">Remember Me?</span>
+            </div>
+
+            <div class="flex-item">
+                <button type="submit" class="submit-btn">Log in</button>
+            </div>
+
+            <div class="flex-item">
+                <a href="https://www.youtube.com/watch?v=CQeezCdF4mk" class="message" target="_blank">Forgot Password?</a>
+            </div>
         </form>
+
+        <div class="flex-item">
+            <input type="image" src="facebook.png" name="facebookBtn" alt="Facebook" class="socials">
+            <input type="image" src="google.png" name="googleBtn" alt="Google" class="socials">
+            <input type="image" src="twitter.png" name="twitterBtn" alt="Twitter" class="socials">
+        </div>
+
     </div>
-    
 
 </body>
-
-    
 </html>
