@@ -59,13 +59,28 @@ section {
 #process .process-last {
   background-color: #00bbbb;
 }
+
+
+
+
+
+
 /* Our Projects section */
 .project {
-  padding: 2rem;
+  position: relative;
+  width: 100%;
+ /* padding: 2rem;
   background-color: #c9ffff;
-  border-radius: 1rem;
+  border-radius: 1rem;*/
 }
-.project-logo {
+
+.exp-image {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+/*.project-logo {
   background-image: url("../assets/img/exposure-logo.png");
   width: 300px;
   height: 300px;
@@ -77,18 +92,52 @@ section {
   align-content: center;
   margin: 0 auto;
   transition: opacity 200ms;
-}
+}*/
 .project-name {
   font-size: 3rem;
-  color: #ffffff;
+  color: #19d1c8;
   align-self: center;
   font-weight: bold;
 }
 .project-desc {
-  transition: opacity 200ms;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+  border-radius: 25px;
+/* transition: opacity 200ms;
   width: 300px;
   height: 300px;
+  text-align: center;*/
 }
+
+.project:hover .project-desc{
+  opacity: 1;
+}
+
+.text{
+  display: flex;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+
+
 /* Location section */
 .location-header {
   color: #f0ffff;

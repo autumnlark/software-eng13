@@ -1,7 +1,8 @@
-var logo = document.getElementById('exposure-logo')
+/*var logo = document.getElementById('exposure-logo')
 var desc = document.getElementById('exposure-text')
 
 logo.addEventListener('mouseenter', logoHover);
+desc.addEventListener('mouseleave', textHover);
 
 function logoHover() {
     desc.style.display = 'block';
@@ -11,8 +12,10 @@ function logoHover() {
 }
 
 function textHover() {
-    desc.classList.remove('hide');
-    desc.classList.add('show');
-    logo.classList.remove('show');
-    logo.classList.add('hide');
+    desc.classList.remove('show');
+    desc.classList.add('hide');
+    logo.classList.remove('hide');
+    logo.classList.add('show');
+    logo.style.opacity = '1';
 }
+*/
