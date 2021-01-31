@@ -105,7 +105,9 @@ section {
   display: flex;
   align-items: center;
   color: white;
-
+  font-size: 1.25rem;
+  line-height: 1.1;
+  padding: 1rem;
 }
 
 /*how thin the overlay is over the exposure logo*/
