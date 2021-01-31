@@ -1,0 +1,46 @@
+.logo{
+  width: 15%;
+}
+
+
+
+#tabs{
+  
+    list-style-type: none;
+    height: 1000px;
+  }
+
+
+.btn-container {
+
+    margin-top: 500px;
+    background: #c3f0c3;
+  }
+  
+  .btn-container button {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background: #132e2a;
+    padding: 1rem 3rem;
+    color: white;
+    font-size: 2rem;
+    line-height: 1.1;
+    border: none;
+  }
+  .tab {
+    transition: opacity 200ms;
+  
+    background: #2e6d62 !important;
+  }
+  
+  .btn-container button.active {
+    background: #2e6d62;
+  }
+
+
+  .sbtn{
+    display: flex;
+  }
+  .form-control{
+    display: flex;
+  }
