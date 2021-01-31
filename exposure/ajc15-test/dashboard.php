@@ -30,7 +30,10 @@ ini_set('display_errors',1);
                 
                 if  ($poster_screen_name = $mysqli->query($fetch_poster)){
                     if ($poster_screen_name->num_rows > 0){
-                       echo $poster_screen_name->fetch_object()->screen_name . "<br>";
+                        echo "<form action='profile.php' method='post'>";
+                            echo "<input type='hidden' name='user_id' value='" . $post_data->user_id . "'>";
+                            echo "<button>" . $poster_screen_name->fetch_object()->screen_name . "</button><br>";
+                        echo "</form>";
                     }
                 }
                 echo "<form action='posts.php' method='post'>";
@@ -67,7 +70,10 @@ ini_set('display_errors',1);
                 
                 if  ($challenger_screen_name = $mysqli->query($fetch_challenger)){
                     if ($challenger_screen_name->num_rows > 0){
-                       echo $challenger_screen_name->fetch_object()->screen_name . "<br>";
+                       echo "<form action='profile.php' method='post'>";
+                            echo "<input type='hidden' name='user_id' value='" . $challenges_data->user_id . "'>";
+                            echo "<button>" . $challenger_screen_name->fetch_object()->screen_name . "</button><br>";
+                        echo "</form>";
                     }
                 }
                 echo "<form action='posts.php' method='post'>";
@@ -136,7 +142,10 @@ ini_set('display_errors',1);
                 
                 if  ($poster_screen_name = $mysqli->query($fetch_screen_name)){
                     if ($poster_screen_name->num_rows > 0){
-                       echo $poster_screen_name->fetch_object()->screen_name . "<br>";
+                       echo "<form action='profile.php' method='post'>";
+                            echo "<input type='hidden' name='user_id' value='" . $person_data->user_id . "'>";
+                            echo "<button>" . $poster_screen_name->fetch_object()->screen_name . "</button><br>";
+                        echo "</form>";
                     }
                 }
             }
