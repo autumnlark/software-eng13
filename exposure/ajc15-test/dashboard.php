@@ -2,6 +2,9 @@
     /*Execute the code to connect to the database*/
     require("dbconnect.php");
 
+error_reporting(E_ALL);
+ini_set('display_errors',1);
+
 ///////////////////////////////////////
 /////////////// Posts /////////////////
 ///////////////////////////////////////
@@ -19,7 +22,7 @@
                 $fetch_profile_pic = "SELECT profile_picture FROM Profiles WHERE user_id = '" . $post_data->user_id . "'";
                 if  ($poster_profile_pic = $mysqli->query($fetch_profile_pic)){
                     if ($poster_profile_pic->num_rows > 0){
-                       echo "<img src='" . $poster_profile_pic->fetch_object()->profile_picture . "' style='width:25px; height:25px;'>";
+                        echo "<img src='" . $poster_profile_pic->fetch_object()->profile_picture . "' style='width:25px; height:25px;'>";
                     }
                 }
                 
@@ -30,7 +33,11 @@
                        echo $poster_screen_name->fetch_object()->screen_name . "<br>";
                     }
                 }
-                echo "<img src='" . $post_data->image . "' style='width:5%; height:10%'><br><br>";
+                echo "<form action='posts.php' method='post'>";
+                    echo "<input type='hidden' name ='post_id' value='" . $post_data->post_id . "'>";
+                    echo "<input type='image' src='" . $post_data->image . "' style='width:5%; height:10%' name='post_id'><br><br>";
+                echo "</form>";
+                //echo "<input type='submit' style='background:url('.../" . $post_data->image . "'); width:5%; height:10%' name='post_id' value='" . $post_data->post_id . "'><br><br>";
             }
         }
     }
@@ -63,7 +70,10 @@
                        echo $challenger_screen_name->fetch_object()->screen_name . "<br>";
                     }
                 }
-                echo "<img src='" . $challenges_data->image . "' style='width:5%; height:10%'><br><br>";
+                echo "<form action='posts.php' method='post'>";
+                    echo "<input type='hidden' name ='post_id' value='" . $challenges_data->post_id . "'>";
+                    echo "<input type='image' src='" . $challenges_data->image . "' style='width:5%; height:10%' name='post_id'><br><br>";
+                echo "</form>";
                 
                 
                 $fetch_comments = "SELECT * FROM Comments WHERE post_id = '" . $challenges_data->post_id . "'";

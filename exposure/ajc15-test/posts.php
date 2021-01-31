@@ -1,8 +1,8 @@
 <?php
-
+    $selected_post_id = $_POST['post_id'];
 
     /*Create a queryto be used*/
-    $fetch_posts = "SELECT * FROM Posts";
+    $fetch_posts = "SELECT * FROM Posts WHERE post_id = " . $selected_post_id;
 
     /*Execute the code to connect to the database*/
     require("dbconnect.php");
@@ -45,8 +45,8 @@
         <title>Posts</title>
     </head>
     <body>
-        <a href="index.html">
-            <button type="button">Back to Login</button>
+        <a href="dashboard.php">
+            <button type="button">Back to Dashboard</button>
         </a>
     </body>
 </html>
