@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     
     <!-- SEO -->
-    <meta name="keywords" content="exposure,social media,photography,log in,login, register, signup, sign up">"
+    <meta name="keywords" content="exposure,social media,photography,log in,login,sign in,signin">"
     <meta name="description" content="Exposure: A photography based social media platform.">
 
     <!-- Style sheet and fonts -->
@@ -21,19 +21,17 @@
 </head>
 <body> 
     
-    <input id="back-btn" type="image" src="back.png" name="backBtn" alt="Back" width="50" height="50">
+    <input id="back-btn" type="image" src="back.png" name="backBtn" alt="Back">
 
     <!-- This is a responsive block in the centre of the page, which holds the site logo and login form. -->
     <div class="flex-container">
 
         <!-- Header (logo and name)-->
-        <div class="flex-item">
-            <img id="site-logo" src="Exposure-logo.png" alt="Exposure logo">
-        </div>
-        <div>
-            <h1 class="flex-item" id="header">Exposure</h1>
-        </div>
+        <img class="flex-item" id="site-logo" src="Exposure-logo.png" alt="Exposure logo">
+        <h1 class="flex-item" id="header">Exposure</h1>
 
+        <h2 class="flex-item" id="top-message">Welcome Back!</h2>
+    
         <form id="login">
             
             <!-- Fields for username and password  -->
@@ -42,22 +40,23 @@
                 <input type="password" class="textbox" placeholder="Enter Password" required>
             </div>
 
-            <!-- Keep the user logged in on this browser (unsure whether to keep?)-->
-            <div class="flex-item">
-                <input type="checkbox" class="check-box" checked="checked">
-                <span class="message">Remember Me?</span>
-            </div>
-
+            <!-- Remember me feature (unsure whether to keep?)-->
+            <span>
+                <input type="checkbox" class="flex-item" checked="checked" style="margin-right: 0;">
+                <span class="flex-item-message" style="margin-right: 30%;">Remember Me?</span>
+            </span>
+                
+            <!-- This could lead to either an email being sent or a security question thing -->
+            <span><a href="https://www.youtube.com/watch?v=CQeezCdF4mk" class="flex-item-message" target="_blank">Forgot Password?</a></span>
+        
             <!-- Submit button -->
             <div class="flex-item">
                 <button type="submit" class="submit-btn">Log in</button>
             </div>
-
-            <!-- This could lead to either an email being sent or a security question thing -->
-            <div class="flex-item">
-                <a href="https://www.youtube.com/watch?v=CQeezCdF4mk" class="message" target="_blank">Forgot Password?</a>
-            </div>
+            
         </form>
+
+        <hr>
 
         <!-- Social login feature (yet to implement)-->
         <div class="flex-item">
