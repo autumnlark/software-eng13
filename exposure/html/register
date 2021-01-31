@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!-- Tab and window settings -->
+    <title>Register | Exposure</title>
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    
+    <!-- SEO -->
+    <meta name="keywords" content="exposure,social media,photography,register,signup,sign up">"
+    <meta name="description" content="Exposure: A photography based social media platform.">
+
+    <!-- Style sheet and fonts -->
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Sansita+Swashed:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body> 
+    
+    <input id="back-btn" type="image" src="back.png" name="backBtn" alt="Back">
+
+    <!-- This is a responsive block in the centre of the page, which holds the site logo and login form. -->
+    <div class="flex-container-reg">
+
+        <!-- Header (logo and name)-->
+        <img class="flex-item" id="site-logo" src="Exposure-logo.png" alt="Exposure logo">
+        <h1 class="flex-item" id="header">Exposure</h1>
+		
+		<h2 class="flex-item" id="top-message">Sign up to join our amazing creators!</h2>
+
+        <form id="signin">
+            
+            <div class="flex-item" id="row">
+                <div class="flex-item" id="column">
+                    <div class="flex-item">
+				        <input type="text" class="textbox" placeholder="Enter your email address" required>
+                        <input type="text" class="textbox" placeholder="Enter username" required>
+                    </div>
+                </div>
+                <div class="flex-item" id="column">
+                    <div class="flex-item">
+                        <input type="password" class="textbox" placeholder="Create password" required>
+				        <input type="password" class="textbox" placeholder="Verify password" required>
+                    </div>
+                </div>
+            </div>
+            <!-- Terms of use and privacy policy yet to be written, these are placeholders -->
+			<div class="flex-item">
+                <span class="flex-item-message">I agree to the:</span>
+                <input type="checkbox" class="check-box">
+				<span><a class="flex-item-message" href="https://freefireplaces.com/#">Terms of Use </a></span>
+
+                <input type="checkbox" class="check-box">
+				<span><a class="flex-item-message" href="http://wwwwwwwww.jodi.org/">Privacy Policy.</a></span>
+            </div>
+
+            <!-- Submit button -->
+            <div class="flex-item">
+                <button type="submit" class="submit-btn">Join Now!</button>
+            </div>
+
+        </form>
+
+        <hr>
+        
+		<!-- Social login feature (yet to implement)-->
+		<p class="flex-item-message">Or register using an existing account:</p>
+        <div class="flex-item">
+            <input type="image" src="facebook.png" name="facebookBtn" alt="Facebook" class="socials">
+            <input type="image" src="google.png" name="googleBtn" alt="Google" class="socials">
+            <input type="image" src="twitter.png" name="twitterBtn" alt="Twitter" class="socials">
+        </div>
+
+    </div>
+</body>
+</html>
