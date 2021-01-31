@@ -66,72 +66,63 @@ section {
 
 
 /* Our Projects section */
+/*this is our container for our hover overlay for exposure*/
 .project {
   position: relative;
   width: 100%;
- /* padding: 2rem;
-  background-color: #c9ffff;
-  border-radius: 1rem;*/
+ 
 }
 
+/*logo image*/
 .exp-image {
   display: flex;
   width: 100%;
   height: auto;
 }
 
-/*.project-logo {
-  background-image: url("../assets/img/exposure-logo.png");
-  width: 300px;
-  height: 300px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  margin: 0 auto;
-  transition: opacity 200ms;
-}*/
+/*Just the name exposure benetah the logo*/
 .project-name {
   font-size: 3rem;
-  color: #19d1c8;
-  align-self: center;
+  color: #105d8a;
+  text-align: center;
   font-weight: bold;
 }
+
+/*overlay box that appears when hovering over the exposure logo*/
 .project-desc {
   position: absolute;
-  top: 0;
+  top:0;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 100%;
-  width: 100%;
+  height: 100% auto;
+  width: 100% auto;
   opacity: 0;
   transition: .5s ease;
-  background-color: #008CBA;
+  background-color: #21158f;
   border-radius: 25px;
-/* transition: opacity 200ms;
-  width: 300px;
-  height: 300px;
-  text-align: center;*/
-}
-
-.project:hover .project-desc{
-  opacity: 1;
-}
-
-.text{
+  text-align: center;
   display: flex;
+  align-items: center;
+  color: white;
+
+}
+
+/*how thin the overlay is over the exposure logo*/
+.project:hover .project-desc{
+  opacity: 0.9;
+}
+
+/**/
+ .text{
   color: white;
   font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  display: flex;
+  align-items: center;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  text-align: center;
+  /*text-align: center;*/
 }
 
 
