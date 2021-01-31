@@ -1,6 +1,7 @@
 /*this is the css. honestly don't think this is very good*/
 body{
-background-color: lightgreen;
+
+  background: #c3f0c3;
 }
 
 #navigation {
@@ -88,4 +89,59 @@ li.prof{
   z-index: -100;
   word-wrap: break-word;
   overflow: hidden;
+}
+
+.tabs-container {
+  background: #2e6d62;
+}
+
+.btn-container {
+
+  margin-top: 500px;
+  background: #c3f0c3;
+}
+
+.btn-container button {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background: #132e2a;
+  padding: 1rem 3rem;
+  color: white;
+  font-size: 2rem;
+  line-height: 1.1;
+  border: none;
+}
+.tab {
+  transition: opacity 200ms;
+
+  background: #2e6d62 !important;
+}
+
+.btn-container button.active {
+  background: #2e6d62;
+}
+
+.post {
+  background: #132e2a;
+  height: 150px;
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem;
+}
+
+.post p {
+  background: #c3f0c3;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  height: 2rem;
+}
+
+.hidden {
+  opacity: 0;
+  display: none;
+}
+
+.show {
+  opacity: 1;
+  display: block;
 }
