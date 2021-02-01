@@ -1,0 +1,97 @@
+.logo{
+  width: 15%;
+  
+}
+
+body{
+  background: #c3f0c3;
+}
+
+.navbar-brand{
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.tab-row{
+  display: flex;
+}
+#tabs{
+  
+    list-style-type: none;
+    height: 1000px;
+   
+  }
+  .tabs-container {
+    background: #2e6d62;
+  }
+
+.btn-container {
+
+    margin-top: 50px;
+    background: #c3f0c3;
+  }
+  
+  .btn-container button {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background: #132e2a;
+    padding: 1rem 2.3rem;
+    color: white;
+    font-size: 1.6rem;
+    line-height: 1.1;
+    border: none;
+  }
+
+  .tab-button{
+    display: flex;
+  }
+
+  #show-tab-1{
+    padding: 1rem 5rem;
+  }
+
+  #show-tab-2{
+    padding: 1rem 4rem;
+  }
+  #show-tab-3{
+    padding: 1rem 3rem;
+  }
+  #show-tab-4{
+    padding: 1rem 3.5rem;
+  }
+  #show-tab-6{
+    padding: 1rem 3rem;
+  }
+  .tab {
+    padding-top: 2rem;
+    transition: opacity 200ms;
+  
+    background: #2e6d62 !important;
+  }
+  
+  .btn-container button.active {
+    background: #2e6d62;
+  }
+
+
+  .sbtn{
+    display: flex;
+  }
+  .form-control{
+    display: flex;
+  }
+
+  h1{
+    font-size: 100px;
+    text-align: center;
+  }
+
+  .hidden {
+    opacity: 0;
+    display: none;
+  }
+
+  .show {
+    opacity: 1;
+    display: block;
+  }
