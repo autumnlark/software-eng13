@@ -154,3 +154,14 @@ ini_set('display_errors',1);
         }
     }
 ?>
+
+<!DOCTYPE html>
+<head>
+    <title>Exposure Login</title>
+</head>
+<body>
+    <br>
+    <a href="create.html">
+        <button type="button">Create Post</button>
+    </a>
+</body>
