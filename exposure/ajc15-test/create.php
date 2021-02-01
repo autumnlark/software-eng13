@@ -61,8 +61,8 @@ if ($success == 0) {
     echo "The file ". htmlspecialchars(basename($_FILES['image']['name'])). " has been uploaded successfully, new file name: " . $new_image_path;
       
     /*Create a query to be used*/
-    $insert_post = "INSERT INTO Posts (user_id, image, caption, view_count, location, post_type, privacy, num_likes, upload_date) 
-                    VALUES ('" . $userid . "', '" . $new_image_path . "', '" . $caption . "', 0, '" . $location . "', '" . $post_type . "', '" . $privacy . "', 0, '" . $upload_date . "')";
+    $insert_post = "INSERT INTO Posts (user_id, image, caption, view_count, location, post_type, privacy, num_likes, upload_date, points) 
+                    VALUES ('" . $userid . "', '" . $new_image_path . "', '" . $caption . "', 0, '" . $location . "', '" . $post_type . "', '" . $privacy . "', 0, '" . $upload_date . "', 0)";
 
     //$query_string = "INSERT INTO Hashtags (post_id, hashtag) VALUES (3, 'hashtag_test')";
 
@@ -78,20 +78,22 @@ if ($success == 0) {
         if ($found_post_id->num_rows > 0){
             $new_post_id = $found_post_id->fetch_object();
             echo "<br>Post ID Found " . $new_post_id->post_id . " using date: " . $upload_date;
+            
+            foreach($hashtag_array as $hashtag){
+                //$hashtag_post = $new_post_id;
+                $insert_hashtags = "INSERT INTO Hashtags (post_id, hashtag) VALUES (". $new_post_id . ", '" . $hashtag . "')";
+                if($mysqli->query($insert_hashtags)){
+                    echo "<br>Hashtags successfully inserted";
+                } else {
+                    echo "<br>Failed to insert Hashtags";
+                }
+            }
         }
     } else {
         echo "<br>Could not find post id";
     }
 
-    foreach($hashtag_array as $hashtag){
-        $hashtag_post = $new_post_id->post_id;
-        $insert_hashtags = "INSERT INTO Hashtags (post_id, hashtag) VALUES (". $hashtag_post . ", '" . $hashtag . "')";
-        if($mysqli->query($insert_hashtags)){
-            echo "<br>Hashtags successfully inserted";
-        } else {
-            echo "<br>Failed to insert Hashtags";
-        }
-    }
+    
   } else {
     echo "An unknown error has occurred and file has failed to upload, new file name: " . $new_image_path;
   }
@@ -104,8 +106,6 @@ echo "<br> Hashtags: <br>";
 foreach($hashtag_array as $hashtag_display){
     echo $hashtag_display . "<br>";  
 }
-
-//Place inside file upload success if statement once it is working
 
 
 ?>
