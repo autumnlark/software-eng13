@@ -1,0 +1,171 @@
+/* Default font-size */
+/* Default line-height */
+/* -- HTML Tags -- */
+body {
+  font-family: 'Noto Sans', Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  background: #060000;
+  width: 100%;
+  z-index: 1;
+}
+p {
+  color: #160505;
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+h1 {
+  color: #ffffff;
+  font-family: 'Cantarell', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 2.5rem;
+  line-height: 2.7rem;
+}
+h2 {
+  color: #ffffff;
+  font-family: 'Cantarell', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 2rem;
+  line-height: 2.2rem;
+}
+hr {
+  color: #ff0000;
+  background: #ff0000;
+  border-top: 5px solid #ff0000;
+}
+/* -- Navigation -- */
+nav {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  transition: opacity 0.2s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(to bottom right,#4F2B3F,#8A23B4);
+}
+nav div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  text-align: center;
+  width: max-content;
+  margin: 0 auto;
+}
+nav a {
+  text-decoration: none;
+}
+nav a h1 {
+  margin: 0;
+  padding: 3rem 2rem;
+  transition: padding 0.2s, font-size 0.2s;
+}
+nav a:hover h1 {
+  padding: 3rem 1.25rem;
+  font-size: 2.7rem;
+  line-height: 2.7rem;
+}
+#toggle-navigation {
+  position: absolute;
+  text-align: center;
+  width: 2rem;
+  height: 2rem;
+  background: #060000;
+  border: none;
+  padding: 0;
+  margin: 0.25rem;
+  z-index: 3;
+}
+.fi {
+  color: #ffffff;
+  font-size: 2rem;
+}
+/* -- Header -- */
+header {
+  margin: 0;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+/* -- Utility -- */
+.hide {
+  opacity: 0;
+}
+.show {
+  opacity: 1;
+}
+/* xs */
+/* sm */
+/* md */
+/* lg */
+/* xl */
+
+.logoPic{
+  width:20%;
+  height: 30%;
+  position: absolute; 
+  
+  
+}
+
+.title-slidshow{
+  max-width: 100%;
+  position: absolute;
+  margin: auto;
+}
+
+.slide{
+  display: none;
+
+}
+
+.logo{
+  color: aqua;
+  font-size: larger;
+  text-shadow: aquamarine;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  top: 0;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 10s;
+  animation-name: fade;
+  animation-duration: 5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .50}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .20}
+  to {opacity: 1}
+}
+
+.About{
+  color: #ffffff;
+}
+
+.text{
+  color: azure;
+}
+

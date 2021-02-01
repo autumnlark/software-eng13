@@ -7,35 +7,44 @@ body {
   margin: 0;
   font-size: 1rem;
   line-height: 1.2rem;
-  background: #060000;
+  background: #ffffff;
   width: 100%;
   z-index: 1;
 }
 p {
-  color: #160505;
+  color: #000000;
   font-size: 1rem;
   line-height: 1.2rem;
 }
 h1 {
-  color: #ffffff;
+  color: #4161ff;
   font-family: 'Cantarell', Helvetica, Arial, sans-serif;
   font-weight: 700;
   font-style: italic;
-  font-size: 2.5rem;
-  line-height: 2.7rem;
+  font-size: 3rem;
+  line-height: 3.2rem;
 }
 h2 {
-  color: #ffffff;
+  color: #4161ff;
   font-family: 'Cantarell', Helvetica, Arial, sans-serif;
   font-weight: 700;
   font-style: italic;
   font-size: 2rem;
   line-height: 2.2rem;
 }
-hr {
-  color: #ff0000;
-  background: #ff0000;
-  border-top: 5px solid #ff0000;
+h3 {
+  color: #4161ff;
+  font-family: 'Cantarell', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 1.5rem;
+  line-height: 1.7rem;
+}
+a {
+  color: #000000;
+}
+a:hover {
+  color: #555555;
 }
 /* -- Navigation -- */
 nav {
@@ -48,7 +57,12 @@ nav {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #100f0f;
+  background-image: linear-gradient(to bottom right, #b8b5e4, #74a2dc);
+}
+nav hr {
+  color: #375fb9;
+  background: #375fb9;
+  border-top: 5px solid #375fb9;
 }
 nav div {
   position: absolute;
@@ -70,46 +84,179 @@ nav a h1 {
   margin: 0;
   padding: 3rem 2rem;
   transition: padding 0.2s, font-size 0.2s;
+  color: #000000;
 }
 nav a:hover h1 {
   padding: 3rem 1.25rem;
-  font-size: 2.7rem;
-  line-height: 2.7rem;
-}
-#toggle-navigation {
-  position: fixed;
-  text-align: center;
-  width: 2rem;
-  height: 2rem;
-  background: #060000;
-  border: none;
-  padding: 0;
-  margin: 0.25rem;
-  z-index: 3;
-}
-.fi {
-  color: #ffffff;
-  font-size: 2rem;
+  font-size: 3.2rem;
+  line-height: 3.2rem;
 }
 /* -- Header -- */
 header {
   margin: 0;
-  padding: 1rem 0;
+  padding: 0;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
 }
+header .bi {
+  color: #000000;
+}
+.logoPic {
+  background: white;
+  padding: 5px;
+}
+#logo {
+  max-height: 180px;
+}
+#company-name {
+  font-size: 5rem;
+  line-height: 100%;
+  text-align: center;
+  color: #072ad7;
+}
+#toggle-navigation {
+  position: relative;
+  text-align: center;
+  width: 5rem;
+  height: 5rem;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  padding: 0;
+  margin: 0.25rem;
+  z-index: 3;
+}
+/* -- Footer -- */
+footer {
+  border-top: 2px solid #375fb9;
+  color: #000000;
+  padding: 1rem 0 2rem;
+  font-size: 0.9rem;
+  margin: 1rem 0 0;
+  line-height: 1.2;
+}
+footer .row div {
+  padding: 1rem 1.5rem;
+}
+#footer-social .bi {
+  font-size: 1.5rem;
+  padding: 0;
+  color: #000000;
+}
+#footer-social .row {
+  padding: 0;
+}
+#footer-social .row div {
+  padding-left: 1.5rem;
+}
+#copyright {
+  font-size: 0.75rem;
+  line-height: 1;
+}
+.content {
+  margin-top: 3rem;
+  padding: 1rem 0 0;
+  border-top: 2px solid #375fb9;
+}
+.btn {
+  border: 1px solid #4161ff;
+  background-color: #ffffff;
+  transition: color 200ms, background-color 200ms;
+}
+.btn:hover {
+  background-color: #4161ff;
+  color: #ffffff;
+}
+#map {
+  height: 400px;
+}
+.bi {
+  color: #000000;
+  font-size: 5rem;
+}
 /* -- Utility -- */
 .hide {
-  opacity: 0;
+  opacity: 0 ;
+  display: none;
 }
 .show {
-  opacity: 1;
+  opacity: 1 ;
+  display: block;
+}
+.title-slideshow {
+  /*  max-width: 100%;
+  position: absolute;
+  margin: auto;*/
+}
+.title-slideshow img {
+  width: 100%;
+}
+.slide {
+  display: none;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 10s;
+  animation-name: fade;
+  animation-duration: 5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /* xs */
+@media (max-width: 575.98px) {
+  #logo {
+    max-height: 90px;
+  }
+  #company-name,
+  .bi {
+    font-size: 2.5rem;
+  }
+}
 /* sm */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #logo {
+    max-height: 90px;
+  }
+  #company-name,
+  .bi {
+    font-size: 3rem;
+  }
+}
 /* md */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #logo {
+    max-height: 90px;
+  }
+  #company-name,
+  .bi {
+    font-size: 3.5rem;
+  }
+}
 /* lg */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #logo {
+    max-height: 120px;
+  }
+  #company-name,
+  .bi {
+    font-size: 4rem;
+  }
+}
 /* xl */

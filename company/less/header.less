@@ -1,0 +1,45 @@
+@import "variables.less";
+@import "mixins.less";
+
+/* -- Header -- */
+
+header {
+  margin: 0;
+  padding:0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+
+  .bi {
+    color: @colour-black;
+  }
+}
+
+.logoPic {
+  background: white;
+  padding: 5px;
+}
+
+#logo {
+  max-height: 180px;
+}
+#company-name {
+  font-size: 5rem;
+  line-height: 100%;
+  text-align: center;
+  color: @colour-title;
+}
+
+#toggle-navigation {
+  position: relative;
+  text-align: center;
+  width: 5rem;
+  height: 5rem;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  padding: 0;
+  margin: 0.25rem;
+  z-index: 3;
+}

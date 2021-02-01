@@ -1,0 +1,174 @@
+@import "variables.less";
+@import "mixins.less";
+
+/* index.html styles */
+
+section {
+  margin: 2rem 0;
+  border-radius: 1rem;
+}
+
+.section-header {
+  h1 {
+    color: @colour-h1;
+  }
+  * {
+    margin: 1rem 1rem 0;
+  }
+}
+
+/* About Us section */
+
+.about-us {
+  color: @colour-text;
+  background-color: @colour-index-background;
+  margin: 2rem 0;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+
+
+/* Our Process section */
+
+.process {
+  margin: 2rem 1rem;
+  padding: 1rem;
+
+  text-align: center;
+  background-color: @colour-cyan;
+  border-radius: 1rem;
+
+  transition: margin 0.2s;
+
+  .bi {
+    font-size: 5rem;
+    margin: 2rem 0;
+    color: @colour-text;
+    display: block;
+    transition: font-size 0.2s;
+  }
+
+  h2 {
+    margin: 0 0 2rem;
+    transition: font-size 0.2s;
+    color: @colour-white;
+  }
+
+  &:hover {
+    margin: 2rem 0.5rem 1rem;
+    .bi {
+      font-size: 5.5rem;
+    }
+
+    h2 {
+      font-size: @fs-h2 + 0.5rem;
+    }
+  }
+}
+
+#process {
+  border: 2px solid @colour-cyan;
+  border-radius: 1rem;
+
+  .process-first {
+    background-color: @colour-cyan - #333333;
+  }
+  .process-last {
+    background-color: @colour-cyan + #333333;
+  }
+}
+
+/* Our Projects section */
+
+#projects {
+}
+
+.project {
+  padding: 2rem;
+  background-color: @colour-index-background;
+  border-radius: 1rem;
+}
+
+.project-logo {
+  background-image: url("../assets/img/exposure-logo.png");
+  width: 300px;
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+  transition: opacity 200ms;
+}
+
+.project-name {
+  font-size: 3rem;
+  color: @colour-white;
+  align-self: center;
+  font-weight: bold;
+}
+
+.project-desc {
+  transition: opacity 200ms;
+  width: 300px;
+  height: 300px;
+
+}
+
+/* Location section */
+
+.location-header {
+  color: @colour-text;
+  background: @colour-index-background;
+  margin: 2rem 0 0;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.map-container {
+  margin: 2rem 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 1rem;
+  background: @colour-index-background;
+}
+
+/* Our Services section */
+
+#services {
+  border: 2px solid @colour-product-border;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.service {
+  margin: 2rem 1rem;
+  padding: 1rem;
+
+  text-align: center;
+  background-color: @colour-product-background;
+  border-radius: 1rem;
+
+  transition: margin 0.2s;
+
+  h2 {
+    margin: 1rem;
+    transition: font-size 0.2s;
+    line-height: 1;
+    color: white;
+  }
+
+  &:hover {
+    margin: 2rem 0.5rem 1.5rem;
+    h2 {
+      font-size: @fs-h2 + 0.5rem;
+    }
+  }
+
+}
+
+
+
