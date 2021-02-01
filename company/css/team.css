@@ -4,6 +4,7 @@
 .member-avatar img {
   border-radius: 100%;
   max-width: 150px;
+  width: 150px;
 }
 .member {
   border: 2px solid #75cdde;
