@@ -1,0 +1,119 @@
+﻿body {
+    height: 100%;
+    width: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    background: url(beaut1.jpg) no-repeat center center fixed;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    overflow: auto;
+}
+
+h1 {
+    margin: auto;
+    font-size: 100px;
+    padding-top: 20px;
+    font-family: 'Sansita Swashed', cursive;
+    color: #4e4e4e;
+    text-align: center;
+    animation: fadein 5s;
+    -moz-animation: fadein 5s; /* Firefox */
+    -webkit-animation: fadein 5s; /* Safari and Chrome */
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 40%;
+    width: 60%;
+    min-height: 300px;
+    min-width: 300px;
+    max-width: 800px;
+    background: rgb(135,217,188);
+    background: linear-gradient(180deg, rgba(135,217,188,1) 20%, rgba(250,250,250,1) 32%);
+    margin: auto;
+    border-radius: 45px;
+    overflow: auto;
+    padding: 5px;
+    margin-top: 5%;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+}
+
+.flex-item {
+    flex: 1 0 auto;
+    margin: 10px;
+    text-align: center;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes fadein { 
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#row {
+    display: flex;
+    margin: 0px;
+}
+
+#column {
+    flex: 50%;
+    margin: 0px;
+}
+
+.button {
+    width: 150px;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    background: #6dbda1;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    font-family: 'ariel', sans-serif;
+    color: white;
+    font-size: 15px;
+}
+
+#left {
+    float: left;
+    margin-right: 40px;
+    animation: fadein 7s;
+}
+#right {
+    float: right;
+    margin-left: 40px;
+    animation: fadein 7s;
+}
