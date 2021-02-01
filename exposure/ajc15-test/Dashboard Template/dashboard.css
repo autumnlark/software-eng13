@@ -95,3 +95,45 @@ body{
     opacity: 1;
     display: block;
   }
+
+  .all-post-container{
+    width: 100%;
+    background-color:#c3f0c3 ;
+    display: flex;
+
+  }
+
+  .all-challenges-container{
+    width: 100%;
+    background-color:#c3f0c3 ;
+    display: flex;
+    
+  }
+  .all-location-container{
+    width: 100%;
+    background-color:#c3f0c3 ;
+    display: flex;
+    
+  }
+
+  /*.map-container {
+    margin: 2rem 1rem;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 1rem;
+   
+  }*/
+  
+
+  .all-people-container{
+    width: 100%;
+    background-color:#c3f0c3 ;
+    display: flex;
+    
+  }
+  .all-hashtag-container{
+    width: 100%;
+    background-color:#c3f0c3 ;
+    display: flex;
+    
+  }
