@@ -53,7 +53,7 @@ function toggleTab(btnId, tabId) {
     }
 }
 
-/*Using heriot watt locatioin map from company website to set layout for dahsboard location map*/ 
+/*Using heriot watt location map from company website to set layout for dahsboard location map*/ 
 var key = 'AIzaSyAsSFGDF9I8ccXM0XAHWQXLpjLwH-B5sGw';
 var map;
 var hwLocation = { lat: 55.913, lng: -3.323 }

@@ -1,16 +1,10 @@
-.logo{
-  width: 15%;
-  
-}
+
 
 body{
   background: #c3f0c3;
 }
 
-.navbar-brand{
-  font-size: 50px;
-  font-weight: bolder;
-}
+
 
 .tab-row{
   display: flex;
@@ -113,16 +107,15 @@ body{
     width: 100%;
     background-color:#c3f0c3 ;
     display: flex;
-    
   }
 
-  /*.map-container {
+  .map-container {
     margin: 2rem 1rem;
     padding: 1.5rem;
     text-align: center;
     border-radius: 1rem;
-   
-  }*/
+    background: #c9ffff;
+  }
   
 
   .all-people-container{

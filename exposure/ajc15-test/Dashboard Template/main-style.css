@@ -1,0 +1,18 @@
+.logo{
+    width: 15%;
+    
+  }
+
+  .navbar-brand{
+    font-size: 50px;
+    font-weight: bolder;
+  }
+
+  footer {
+    border-top: 2px solid #375fb9;
+    color: #000000;
+    padding: 1rem 0 2rem;
+    font-size: 0.9rem;
+    margin: 1rem 0 0;
+    line-height: 1.2;
+  }
