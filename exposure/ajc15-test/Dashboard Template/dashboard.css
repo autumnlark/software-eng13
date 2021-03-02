@@ -97,6 +97,21 @@ body{
 
   }
 
+  .post {
+    background: #132e2a;
+    height: 150px;
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem;
+  }
+  
+  .post p {
+    background: #A6E1A3;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    height: 2rem;
+  }
+
   .all-challenges-container{
     width: 100%;
     background-color:#c3f0c3 ;
