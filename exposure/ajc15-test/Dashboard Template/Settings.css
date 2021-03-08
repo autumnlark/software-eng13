@@ -1,0 +1,21 @@
+body{
+    margin: 3rem;;
+    padding: 3rem;
+  
+}
+
+
+
+.btn-container {
+    background: white;
+    margin: 0 auto;
+    height: 28rem;
+    
+  }
+
+  .container{
+      width: 100%;
+      max-width: 150%;
+      
+
+  }
