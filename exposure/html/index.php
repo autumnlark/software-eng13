@@ -9,39 +9,42 @@
     <title>Profile | Server Monk Software</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/NavBar.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
 
 </head>
 <body>
 <!--This is for the nav bar-->
-<nav>
-    <ul id="navigation">
-        <li class="nav" id="logo"><a href="index.html"><img id="image" src="../assets/Logo-merged.png"> Exposure</a></li>
-        <li class="nav"><a href="default.asp">Home</a></li>
-        <li class="nav"><a href="news.asp">News</a></li>
-        <li class="nav"><a href="contact.asp">Contact</a></li>
-        <li class="nav"><a href="about.asp">About</a></li>
-        <li class="nav"><input type="text" placeholder="Search.."></li>
 
-    </ul>
-</nav>
-
+<?php include "NavBar.html" ?>
 <!--- This is for the profile pic + bio, think we also might need to add like follow button or something?-->
-<div>
-
-    <img id="imageprof" src="https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg">
-
+<div class = "text-container">
+    <div class="py-5 text-break ">
+        <div class="d-flex flex-row flex-wrap  justify-content-center flex-md-nowrap" >
+            <div class="px-md-5">
+                <img id="imageprof" src="">
+            </div>
     
     
-        <div id="user_info">
-        <h1>Baby Yoda</h1>
-        <p>yoda@gmail.com</p>
+            <div id="user_info">
+                <div>
+                <h1 class =" d-flex justify-content-center  justify-content-md-start">Name Here</h1>
+                <p class =" d-flex justify-content-center  justify-content-md-start">name@gmail.com</p>
+                </div>
+        
+                <div  class="me-5 ms-md-0 ms-5" id = "user_bio">
+                <p>
+                fjakdsjf;ajshdfkjshfksjdhfkjhsdkjhfkjshhowfbn;jWebnfliuWEbfljwebfkjd;lkasjdf;lkjfjjasdlaskdjhflakjsdhflkajdshlkajshflaksjdhflaksjdhflskdjfhalskjdhflakjsdhflkajsdhflkjsdhflkajsdhflkjhsdlfkjhaskldjhfklajdhfklajsdhflkajdhflkajsdhfjdhflkjsdfhklsjhfkjshfkjsdhflaksjdhflakdsjfhlaksjdhfkljsdhflakjhlkasjdfhjj</p>
+                </div>
+            </div>
         </div>
-    <div id = "user_bio">
-        <p>cute jedi,
-            fjakdsjf;ajshdfkjshfksjdhfkjhsdkjhfkjshhowfbn;jWebnfliuWEbfljwebfkjd;lkasjdf;lkjfjjasdlaskdjhflakjsdhflkajdshlkajshflaksjdhflaksjdhflskdjfhalskjdhflakjsdhflkajsdhflkjsdhflkajsdhflkjhsdlfkjhaskldjhfklajdhfklajsdhflkajdhflkajsdhfjdhflkjsdfhklsjhfkjshfkjsdhflaksjdhflakdsjfhlaksjdhfkljsdhflakjhlkasjdfhjj</p>
-    </div>
+    
 
+  
+       
+    </div>
 </div>
 
 <!--- this is for the tab part-->
@@ -50,10 +53,10 @@
     <div class="container">
         <div class="row">
             <div class="col-6">
-                <button id="show-tab-1" class="tab-button active">Posts</button>
+                <button id="show-tab-1" Style = "width: 14rem;" class="tab-button active">Posts</button>
             </div>
             <div class="col-6">
-                <button id="show-tab-2" class="tab-button">Challenges</button>
+                <button id="show-tab-2" Style = "width: 14rem;" class="tab-button">Challenges</button>
             </div>
         </div>
     </div>
@@ -120,5 +123,17 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="../js/profile.js"></script>
+<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsSFGDF9I8ccXM0XAHWQXLpjLwH-B5sGw&callback=initMap">
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   
+
 </body>
 </html>
