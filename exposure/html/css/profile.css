@@ -1,0 +1,80 @@
+#imageprof{
+  background-color: black;
+  height: 9rem;
+  width: 9rem;
+  border-radius: 50%;
+}
+
+
+
+#tabs{
+  list-style-type: none;
+  height: 100%;
+}
+
+.tabs-container {
+  background: #2e6d62;
+}
+
+.text-container {
+  margin-top: 3.45rem;
+
+  background: #A6E1A3;
+}
+.btn-container {
+  background: #A6E1A3;
+}
+
+.btn-container button {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background: #132e2a;
+  padding: 1rem 3rem;
+  color: white;
+  line-height: 1.1;
+  border: none;
+  width: 50%;
+
+}
+.tab {
+  transition: opacity 200ms;
+  background: #2e6d62 !important;
+}
+
+.btn-container button.active {
+  background: #2e6d62;
+}
+
+.post {
+  background: #132e2a;
+  height: 150px;
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem;
+}
+
+.post p {
+  background: #A6E1A3;
+  
+  padding: 0.5rem 1rem;
+  height: 2rem;
+
+}
+
+.hidden {
+  opacity: 0;
+  display: none;
+}
+
+.show {
+  opacity: 1;
+  display: block;
+}
+
+
+@media (max-width: 768px) {
+  .btn-container button{
+      width: 100%;
+  }
+}
+
