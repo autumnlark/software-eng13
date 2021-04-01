@@ -1,0 +1,51 @@
+
+
+.tabs-container {
+  background: #2e6d62;
+}
+
+.post-container {
+  margin-top: 3.45rem;
+  padding-top: 5rem;
+  background: #A6E1A3;
+  min-height: 800px;
+}
+
+#img-post{
+  width:100%;
+}
+
+.post {
+  background: #132e2a;
+  min-height: 150px;
+  max-height: 100%;
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem;
+}
+
+.post p {
+  background: #A6E1A3;
+  
+  padding: 0.5rem 1rem;
+  height: 2rem;
+
+}
+
+.hidden {
+  opacity: 0;
+  display: none;
+}
+
+.show {
+  opacity: 1;
+  display: block;
+}
+
+
+@media (max-width: 768px) {
+  .btn-container button{
+      width: 100%;
+  }
+}
+

@@ -1,0 +1,38 @@
+
+
+.tabs-container {
+  background: #2e6d62;
+  min-height: 2000px;
+}
+
+.post-container {
+  margin-top: 3.45rem;
+  padding-top: 1rem;
+  background: #A6E1A3;
+  min-height: 800px;
+}
+
+#img-post{
+  width:100%;
+}
+
+.post {
+  background: #132e2a;
+ height: 100%;
+ padding: 1rem;
+}
+
+.post p {
+  margin-top:-1rem;
+  background: #A6E1A3;
+ 
+  padding-left: 0.5rem;
+
+}
+
+@media (max-width: 768px) {
+  .btn-container button{
+      width: 100%;
+  }
+}
+

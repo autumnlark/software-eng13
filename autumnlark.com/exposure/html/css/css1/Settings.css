@@ -1,0 +1,181 @@
+
+
+body {
+    font-family: "Lato", sans-serif;
+    margin: 3rem;;
+    padding: 3rem;
+    background:#c3f0c3;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background: #f1f1f1;
+  width: 30%;
+  height: 300px;
+  margin-top: 3rem;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: flex;
+  background: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 395px;
+  background: white;
+  display: flex;
+  margin-top:3rem;
+}
+
+
+/*Style report box*/
+#bug-center{
+    text-align: center;
+    margin:1rem;
+}
+textarea{
+    margin: 10px 0;
+    background: transparent;
+    border: 0px;
+    border-bottom: 2px solid #3cff00;
+    padding: 2rem;
+    color: #000000;
+    max-width: 100%;
+    max-height:20%;
+   
+  }
+  
+ 
+
+  #submitBio,#submitB,.btn {
+    background: #39dd8b;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: #00000;
+    cursor: pointer;
+    text-transform: uppercase;
+   
+  
+}
+
+#app{
+  margin-top: 2rem;
+
+
+}
+
+button#toggle-password {
+    background: none;
+    border: none;
+    cursor: pointer;
+    /* Media query isn't shown here. */
+    font-size: var(--mobile-font-size);
+    font-weight: 300;
+    padding: 0;
+    /* Display at the top right of the container */
+    
+    top: 0;
+    right: 0;
+  }
+
+footer {
+    border-top: 2px solid #375fb9;
+    color: #000000;
+    padding: 1rem 0 2rem;
+    font-size: 0.9rem;
+    margin: 1rem 0 0;
+    line-height: 1.2;
+  }
+  footer .row div {
+    padding: 1rem 1.5rem;
+  }
+
+
+
+
+
+
+  /*Privacy checks*/
+  .switch {
+    
+    display: flex;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }

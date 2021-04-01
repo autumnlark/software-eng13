@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/mystyle.css">
+    <title>Cinema!</title>
+	
+  </head>
+  <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="index.html">ECinema</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.php">Book Tickets <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="reservation.php">Reservations</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="login.php">Reviews</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Trailers
+        </a>
+        <div class="dropdown-menu" aria-labelledby="Create Account">
+          <a class="dropdown-item" href="//www.hd-trailers.net/embed/disney-frozen/9-uk-trailer-1080p/">Frozen</a>
+          <a class="dropdown-item" href="//www.hd-trailers.net/embed/big-hero-6/9-new-york-comic-con-sizzle-720p/">Big Hero 6</a>
+          <a class="dropdown-item" href="//www.hd-trailers.net/embed/finding-nemo/1-trailer-720p/">Finding Nemo</a>
+		  <a class="dropdown-item" href="#"><iframe width="969" height="524" src="https://www.youtube.com/embed/MsAniqGowKE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>Mulan</a></iframe>
+		  <a class="dropdown-item" href="#"><iframe width="932" height="524" src="https://www.youtube.com/embed/JyELRuI26Vo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>Lilo & Stitch</a></iframe>
+        </div>
+      </li>
+      
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+	 <li class="nav-item">
+        <a class="nav-link" href="login.php">Login</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="form2.php">Register</a>
+      </li>
+  </div>
+</nav>
+<!--==============
+End Navigation
+=================
+-->
+<div class="container">
+  <div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="pictures/frozen1.jpg" alt="Frozen">
+    </div>
+    <div class="carousel-item">
+      <img src="pictures/nemo1.jpg" alt="Finding Nemo">
+    </div>
+    <div class="carousel-item">
+	
+      <img src="pictures/bh61.jpg" alt="Big Hero 6">
+	 
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
+
+
+ 
+  <!--==============
+End Carousel
+====================
+-->
+
+
+<!---cards=========
+===========------>
+<div class="main">
+	<div class="row">
+		<div class="col-md-4">
+
+			<div class="card" style="width: 18rem;">
+			<a href="#">
+			  <img class="card-img-top" src="pictures/mulan.jpg" alt="mulan">
+			  </a>
+			  <div class="card-body">
+				<p class="card-text">Mulan is a girl, the only child of her honored family.
+				When the Huns invade China, one man from every family is called to arms.
+				Mulan's father, who has an...</p>
+			  </div>
+			</div>
+			
+	</div>
+	
+	<div class="col-md-4">
+
+			<div class="card" style="width: 18rem;">
+			<a href="#">
+			  <img class="card-img-top" src="pictures/lilo&stitch.png" alt="lilo&stitch">
+			  </a>
+			  <div class="card-body">
+				<p class="card-text">A tale of a young girl's close encounter with the galaxy's most
+				wanted extraterrestrial. Lilo is a lonely Hawaiian girl who adopts a small ugly "dog,"
+				whom she...</p>
+			  </div>
+			</div>
+			
+	</div>
+	
+	<div class="col-md-4">
+
+			<div class="card" style="width: 18rem;">
+			<a href="snacks.php">
+			  <img class="card-img-top" src="pictures/snacks.jpg" alt="Card image cap">
+			  </a>
+			  <div class="card-body">
+				<p class="card-text">Choose from an assortment of snacks for your perfect ECinema experience </p>
+			  </div>
+			</div>
+			
+	</div>
+	</div>
+	</div>
+	<!---end cards=========
+===========------>
+	
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

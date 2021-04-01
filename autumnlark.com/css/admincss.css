@@ -1,0 +1,48 @@
+.main{
+	
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-bottom:20px;
+}
+.admincards{
+	
+	padding-top: 20px;
+	padding-left: 20px
+}
+.sidenav {
+	position: fixed;
+	height: 100%;
+	width: 160px;
+	z-index: 1;
+	
+	margin: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	padding-top: 20px;
+}
+.sidenav a {
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+  }
+  
+body{
+	
+    
+    background-color:#c3f0c3;
+	background-repeat: no-repeat;
+	background-size:cover;
+    
+   
+	
+}
+
+
+
+.row{
+	
+	margin-bottom: 20px;
+}
+

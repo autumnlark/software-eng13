@@ -1,0 +1,104 @@
+body{
+  background: #c3f0c3;
+}
+
+.title-container {
+  margin-top: 3.45rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  width: 100%;
+  background: #c3f0c3;
+  
+}
+
+h2 {
+	padding-left: 1%;
+	background: #c3f0c3;
+	color: #132e2a;
+	font-family: 'ariel', sans-serif;
+}
+
+.results-container {
+	background: #2e6d62;
+	padding: 5px;
+	width: 100%;
+}
+
+.results-category {
+	margin: 10px;
+	background: #c3f0c3;
+	padding: 5px;
+}
+
+.cat-head {
+	display: flex;
+	justify-content: space-between;
+	margin: 5px;
+}
+
+h3 {
+	font-family: 'ariel', sans-serif;
+	color: #132e2a;
+	font-size: 18px;
+}
+
+.more-button {
+	width: 120px;
+	margin: 8px;
+	cursor: pointer;
+	background: #6dbda1;
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+	font-family: 'ariel', sans-serif;
+	color: white;
+	font-size: 15px;
+}
+
+.results {
+	overflow-x: auto;
+	margin: 5px;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: start;
+	align-items: auto;
+	align-content: center
+}
+
+.user {
+	margin: 5px;
+	background: #132e2a;
+	height: 100%;
+	width: 400px;
+	color: white;
+	font-family: 'ariel', sans-serif;
+}
+
+.pics {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.challenge {
+	margin: 5px;
+	background: #132e2a;
+	height: 100%;
+	width: 400px;
+}
+
+p {
+	color: white;
+	font-family: 'ariel', sans-serif;
+	margin: 10px;
+}
+
+.photo {
+	margin: 5px;
+	background: #132e2a;
+	height: 100%;
+	width: 400px;
+}
